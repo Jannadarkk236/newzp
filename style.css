@@ -1,0 +1,404 @@
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    background-color: #eee;
+    background: linear-gradient(blue, yellow);
+
+}
+
+.support-unian {
+    margin: 16px 0 24px;
+    height: 56px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 56px;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    color: #fff;
+    text-shadow: 0 2px 2px rgba(0,0,0,.24), 0 4px 8px rgba(0,0,0,.24);
+    text-align: center;
+    width: 100%;
+    max-width: 304px;
+    display: block;
+    border-radius: 4px;
+    background: url(/images/flag.png) 50%;
+}
+a, img {
+    border: none;
+    outline: none;
+    color: #25252c;
+}
+a {
+    text-decoration: none;
+    color: #25252c;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+a, img {
+    border: none;
+    outline: none;
+}
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.wrapper{
+    flex-grow: 1;
+    
+}
+
+.open{
+    display: flex !important;
+    
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 100px;
+    background: linear-gradient( yellow, blue);
+    color: #FAF6F2;
+    padding: 0 40px;
+}
+
+
+.logo{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 50%;
+    border: 1px solid #FAF6F2;
+    width: 90px;
+    height: 90px;
+}
+
+.nav{
+    display: none;
+    width: 700px;
+    padding: 0 40px;
+    background-color: #eee;
+    color: aliceblue;
+
+}
+
+.nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    color: rgb(172, 34, 10);
+    background-color: #eee;
+}
+
+.burger{
+    display: flex;
+    position: relative;
+    z-index: 50;
+    align-items: center;
+    justify-content: flex-end;
+    width: 30px;
+    height: 18px;
+}
+
+.burger span{
+    height: 2px;
+    width: 80%;
+    transform: scale(1);
+    background-color: rgb(3, 1, 16);
+}
+
+.burger::before, .burger::after{
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background-color:rgb(18, 17, 15);
+    transition: all 0.3s ease 0s;
+}
+
+.burger::before { top: 0 }
+
+.burger::after { bottom: 0 }
+
+
+/* Добавляем класс active для анимации иконки бургера */
+.burger.active span { transform: scale(0) }
+
+
+.burger.active::before{
+    top: 50%;
+    transform: rotate(-45deg) translate(0, -50%);
+    
+}
+
+.burger.active::after{
+    bottom: 50%;
+    transform: rotate(45deg) translate(0, 50%);
+    
+}
+
+
+/* При разрешении экрана 900px и ниже, выводим на экран иконку бургера */
+@media (max-width: 900px) {
+
+    .burger { display: flex }
+
+    .nav{
+        display: none;
+        flex-direction: column;
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        top: 0; bottom: 0; left: 0; right: 0;
+        z-index: 50;
+        overflow-y: auto;
+        padding: 50px 40px;
+        background-color: rgb(244, 235, 235);
+        animation: burgerAnimation 0.4s;
+    }
+
+    .nav ul{
+        flex-direction: column;
+        row-gap: 30px;
+    }
+}
+.nav.ul{
+    color: #eee;
+    background-color: #eee;
+}
+
+@keyframes burgerAnimation {
+    from {opacity: 0}
+    to {opacity: 1}
+}
+
+
+.button{
+    display: flex;
+    justify-content: left;
+}
+
+.to-top {
+    position: fixed; /* Элемент вырезается из потока */
+    bottom: 20px;
+    right: 20px;
+    font-size: 50px;
+    color: #530978;
+    scroll-behavior: smooth;
+  }
+
+  
+
+  .contacts{
+    position: fixed; /* Элемент вырезается из потока */
+    bottom: 20px;
+    
+    font-size: 30px;
+    color: #530978;
+    bottom: 1px;
+    font-size: 15px;
+
+  }
+
+ 
+  body {
+    background-color: lightgreen;
+   
+    /* Smoothly transition the background color */
+    transition: background-color .5s;
+  }
+   
+  /* Using flex with the column direction to
+     align items in a vertical direction */
+  .player {
+    height: 95vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+   
+  .details {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 25px;
+  }
+   
+  .track-art {
+    margin: 25px;
+    height: 250px;
+    width: 250px;
+    background-image: URL(
+       "https://source.unsplash.com/Qrspubmx6kE/640x360");
+    background-size: cover;
+    background-position: center;
+    border-radius: 15%;
+  }
+   
+  /* Changing the font sizes to suitable ones */
+  .now-playing {
+    font-size: 1rem;
+  }
+   
+  .track-name {
+    font-size: 3rem;
+  }
+   
+  .track-artist {
+    font-size: 1.5rem;
+  }
+   
+  /* Using flex with the row direction to
+     align items in a horizontal direction */
+  .buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+   
+  .playpause-track,
+  .prev-track,
+  .next-track {
+    padding: 25px;
+    opacity: 0.8;
+   
+    /* Smoothly transition the opacity */
+    transition: opacity .2s;
+  }
+   
+  /* Change the opacity when mouse is hovered */
+  .playpause-track:hover,
+  .prev-track:hover,
+  .next-track:hover {
+    opacity: 1.0;
+  }
+   
+  /* Define the slider width so that it scales properly */
+  .slider_container {
+    width: 75%;
+    max-width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+   
+  /* Modify the appearance of the slider */
+  .seek_slider, .volume_slider {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    height: 5px;
+    background: black;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+  }
+   
+  /* Modify the appearance of the slider thumb */
+  .seek_slider::-webkit-slider-thumb,
+  .volume_slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    background: white;
+    cursor: pointer;
+    border-radius: 50%;
+  }
+   
+  /* Change the opacity when mouse is hovered */
+  .seek_slider:hover,
+  .volume_slider:hover {
+    opacity: 1.0;
+  }
+   
+  .seek_slider {
+    width: 60%;
+  }
+   
+  .volume_slider {
+    width: 30%;
+  }
+   
+  .current-time,
+  .total-duration {
+    padding: 10px;
+  }
+   
+  i.fa-volume-down,
+  i.fa-volume-up {
+    padding: 10px;
+  }
+   
+  /* Change the mouse cursor to a pointer
+     when hovered over */
+  i.fa-play-circle,
+  i.fa-pause-circle,
+  i.fa-step-forward,
+  i.fa-step-backward {
+    cursor: pointer;
+  }
+
+  #share {
+    width:100%;
+    margin: 0 auto;
+    background:#fff;
+    text-align:center;
+  }
+   
+  .like {
+  font-size: 16px;
+  font-weight: 700;
+  padding-top: 10px;
+  margin-bottom: 10px;
+  }
+   
+  .push {
+      display: inline-block;
+      min-width: 100px;
+      margin: 5px 2px 10px 2px;
+      font-size: 15px;
+      text-align: center;
+      color: #fff;
+      cursor: pointer;
+      padding: 5px;
+  }
+  
+   
+  .facebook {background-color:#3b5998;}
+  .facebook:hover {background-color:#2d4373;color:#fff;text-decoration: none;}
+   
+  .google {background-color:#dd4b39;}
+  .google:hover {background-color:#c23321;color:#fff;text-decoration: none;}
+   
+  .pinterest {background-color:#bd081c;}
+  .pinterest:hover {background-color:#881f12;color:#fff;text-decoration: none;}
+   
+  .viber {background-color:#665cac;}
+  .viber:hover {background-color:#881f12;color:#fff;text-decoration: none;}
+   
+  .twitter {background-color:#55acee;}
+  .twitter:hover {background-color:#2795e9;color:#fff;text-decoration: none;}
+   
+  .vkontakte {background-color:#587ea3;}
+  .vkontakte:hover {background-color:#466482;color:#fff;text-decoration: none;}
+   
+  .telegram {background-color:#083aee;}
+  .telegram:hover {background-color: #a05f20; color:#fff;text-decoration: none;}
+  /* Стили для оформления кнопок поделиться */

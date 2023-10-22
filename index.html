@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://i.ibb.co/GP3dyzw/IMG-6199.jpg">
+    <script src="https://kit.fontawesome.com/783da6e0a3.js" crossorigin="anonymous"></script>
+    <script src="./js/jquery-3.7.1.min.map"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    
+
+    
+    <title>about Zaporozhye</title>
+    
+    
+
+</head>
+<body>
+    <div class="wrapper">
+    <header class="header">
+        <div class="logo">
+            <!-- <span>Zaporozhye</span>
+            <span>keys</span> -->
+            <img src="./img/o_1bl85kdavfi56ot10kaqr1k5st.svg" alt="">
+            
+
+            
+
+        </div>
+        
+        <h1>About Zaporizhzhia</h1>
+        <nav class="nav">
+            <ul>
+                <li><a href="https://ru.wikipedia.org/wiki/%D0%97%D0%B0%D0%BF%D0%BE%D1%80%D0%BE%D0%B6%D1%8C%D0%B5" target="_blank">Main</a></li>
+                <li> <a href="https://www.gismeteo.kz/weather-zaporizhia-5093/" target="_blank">Weather</a></li>
+                <li><a href="https://www.google.com.ua/maps/@50.4851493,30.4721233,14z?hl=ru" target="_blank">Maps</a></li>
+                <li><a href="https://com1.org.ua/katalog-statej/" target="_blank">Artickles</a></li>
+                <li><a href="https://zabor.zp.ua/Musik/muzikanty.htm" target="_blank">Art</a></li>
+            </ul>
+        </nav>
+
+        <div class="burger">
+            <span></span>
+        </div>
+       
+        
+
+    </header>
+    
+    
+    <form action="/search" method="get">
+        <input type="text" name="q" placeholder="Поиск...">
+        <button type="submit">Найти</button>
+      </form>
+      <link rel="stylesheet"
+        href=
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+ 
+  <!-- Load the custom CSS style file -->
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="player">
+ 
+    <!-- Define the section for displaying details -->
+    <div class="details">
+      <div class="now-playing">PLAYING x OF y</div>
+      <div class="track-art"></div>
+      <div class="track-name">Track Name</div>
+      <div class="track-artist">Track Artist</div>
+    </div>
+ 
+    <!-- Define the section for displaying track buttons -->
+    <div class="buttons">
+      <div class="prev-track" onclick="prevTrack()">
+        <i class="fa fa-step-backward fa-2x"></i>
+      </div>
+      <div class="playpause-track" onclick="playpauseTrack()">
+        <i class="fa fa-play-circle fa-5x"></i>
+      </div>
+      <div class="next-track" onclick="nextTrack()">
+        <i class="fa fa-step-forward fa-2x"></i>
+      </div>
+    </div>
+ 
+    <!-- Define the section for displaying the seek slider-->
+    <div class="slider_container">
+      <div class="current-time">00:00</div>
+      <input type="range" min="1" max="100"
+        value="0" class="seek_slider" onchange="seekTo()">
+      <div class="total-duration">00:00</div>
+    </div>
+ 
+    <!-- Define the section for displaying the volume slider-->
+    <div class="slider_container">
+      <i class="fa fa-volume-down"></i>
+      <input type="range" min="1" max="100"
+        value="99" class="volume_slider" onchange="setVolume()">
+      <i class="fa fa-volume-up"></i>
+    </div>
+  </div>
+ 
+  <!-- Load the main script for the player -->
+      
+        
+            
+  <main>  
+          <section class="top-news">
+              <h3>Главные новости дня</h3>
+              <div class="news-item">
+                <img src="https://cdn.fakty.com.ua/wp-content/uploads/2023/10/21/untitled-1-768x432.jpg" alt="news1">
+                <h3> <a href="https://fakty.com.ua/ru/proisshestvija/20231021-zagroza-balistyky-u-harkovi-prolunaly-vybuhy/" target="_blank">
+                  <p>Россия ударила по терминалу Новой почты в Харьковской области: 6 погибших, еще 14 — ранены </p>
+                  <div class="social" data-url="<?php echo 'https://'.$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];?>" data-title="Стильные кнопки поделится в соц сетях без использования сторонних сервисов">		
+	
+                    <a href="https://nl-nl.facebook.com/" class="push facebook" target="_blank" data-id="fb"><i class="fa fa-facebook"></i> Facebook</a>
+                    <a href="https://vk.com/" class="push vkontakte" target="_blank" data-id="vk"><i class="fa fa-vk"></i> Вконтакте</a>    	
+                    <a href="https://twitter.com/?lang=uk" class="push twitter" target="_blank" data-id="tw"><i class="fa fa-twitter"></i> Twitter</a>
+                    <a href="https://cloud.google.com/" class="push google" target="_blank" data-id="gp"><i class="fa fa-google-plus"></i> Google+</a>
+                    <a href="https://www.pinterest.com/#top" class="push pinterest" target="_blank" data-id="pin"><i class="fa fa-pinterest"></i> Pinterest </a>
+                    <a href="https://www.viber.com/ru/" class="push viber" target="_blank" data-id="viber"><i class="fa fa-phone"></i> Viber </a>
+                    <a href="https://t.me/agvento1" class="push telegram" target="_blank"  data-id="telegram" ><i class="fa fa-telegram"></i> telegram</a>
+                    
+                  </div>
+
+
+
+
+             <div class="news-item">
+              <img src="data:image/jpeg;base64,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" alt="news1">
+              <h3> <a href="https://news.un.org/ru/story/2023/09/1444972" target="_blank">Владимир Зеленский: право России на вето подрывает работу всего Совета Безопасности
+                <p>В своем первом выступлении в зале Совета Безопасности президент Украины Владимир Зеленский в среду призвал расширить состав Совета и реформировать право вето, которым обладают постоянные члены этого органа ООН. </p>
+
+                  </a></h3>
+
+                  <div class="social" data-url="<?php echo 'https://'.$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];?>" data-title="Стильные кнопки поделится в соц сетях без использования сторонних сервисов">		
+	
+                    <a href="https://nl-nl.facebook.com/" class="push facebook" target="_blank" data-id="fb"><i class="fa fa-facebook"></i> Facebook</a>
+                    <a href="https://vk.com/" class="push vkontakte" target="_blank" data-id="vk"><i class="fa fa-vk"></i> Вконтакте</a>    	
+                    <a href="https://twitter.com/?lang=uk" class="push twitter" target="_blank" data-id="tw"><i class="fa fa-twitter"></i> Twitter</a>
+                    <a href="https://cloud.google.com/" class="push google" target="_blank" data-id="gp"><i class="fa fa-google-plus"></i> Google+</a>
+                    <a href="https://www.pinterest.com/#top" class="push pinterest" target="_blank" data-id="pin"><i class="fa fa-pinterest"></i> Pinterest </a>
+                    <a href="https://www.viber.com/ru/" class="push viber" target="_blank" data-id="viber"><i class="fa fa-phone"></i> Viber </a>
+                    <a href="https://t.me/agvento1" class="push telegram" target="_blank"  data-id="telegram" ><i class="fa fa-telegram"></i> telegram</a>
+                    
+                  </div>
+
+             
+             <div class="news-item">
+                <img src="data:image/jpeg;base64,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" alt="news1">
+                <h3> <a href="https://com1.org.ua/iak-zarobyty-na-ukryttiakh-u-dnipri/" target="_blank">Как заработать на укрытиях в Днепре?
+
+                    </a></h3>
+
+             
+      <div class="social" data-url="<?php echo 'https://'.$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];?>" data-title="Стильные кнопки поделится в соц сетях без использования сторонних сервисов">		
+	
+        <a href="https://nl-nl.facebook.com/" class="push facebook" target="_blank" data-id="fb"><i class="fa fa-facebook"></i> Facebook</a>
+        <a href="https://vk.com/" class="push vkontakte" target="_blank" data-id="vk"><i class="fa fa-vk"></i> Вконтакте</a>    	
+        <a href="https://twitter.com/?lang=uk" class="push twitter" target="_blank" data-id="tw"><i class="fa fa-twitter"></i> Twitter</a>
+        <a href="https://cloud.google.com/" class="push google" target="_blank" data-id="gp"><i class="fa fa-google-plus"></i> Google+</a>
+        <a href="https://www.pinterest.com/#top" class="push pinterest" target="_blank" data-id="pin"><i class="fa fa-pinterest"></i> Pinterest </a>
+        <a href="https://www.viber.com/ru/" class="push viber" target="_blank" data-id="viber"><i class="fa fa-phone"></i> Viber </a>
+        <a href="https://t.me/agvento1" class="push telegram" target="_blank"  data-id="telegram" ><i class="fa fa-telegram"></i> telegram</a>
+        
+      </div>
+    </div>
+    
+    
+    
+             <div class="news-container">
+              <div class="news-item">
+               <img src="https://picsum.photos/id/237/300/200" alt="Новость 1">
+               <h3> <a href="https://biz.nv.ua/finance/ukraina-poluchila-pervye-milliardy-ot-mvf-nacbank-38819.html" target="_blank">Украина получила кредит от МВФ на $5 млрд</a></h3>
+               <p><a href="https://www.epravda.com.ua/rus/news/2023/07/3/701848/" target="_blank">В среду, 20 июля, Украина получила кредит от Международного валютного фонда на сумму $5 млрд. Кредит предоставляется на условиях программы расширенного финансового мониторинга.</a></p>
+              
+               <div class="social" data-url="<?php echo 'https://'.$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];?>" data-title="Стильные кнопки поделится в соц сетях без использования сторонних сервисов">		
+	
+                <a href="https://nl-nl.facebook.com/" class="push facebook" target="_blank" data-id="fb"><i class="fa fa-facebook"></i> Facebook</a>
+                <a href="https://vk.com/" class="push vkontakte" target="_blank" data-id="vk"><i class="fa fa-vk"></i> Вконтакте</a>    	
+                <a href="https://twitter.com/?lang=uk" class="push twitter" target="_blank" data-id="tw"><i class="fa fa-twitter"></i> Twitter</a>
+                <a href="https://cloud.google.com/" class="push google" target="_blank" data-id="gp"><i class="fa fa-google-plus"></i> Google+</a>
+                <a href="https://www.pinterest.com/#top" class="push pinterest" target="_blank" data-id="pin"><i class="fa fa-pinterest"></i> Pinterest </a>
+                <a href="https://www.viber.com/ru/"class="push viber" target="_blank" data-id="viber"><i class="fa fa-phone"></i> Viber </a>
+                <a href="https://t.me/agvento1" class="push telegram" target="_blank"  data-id="telegram" ><i class="fa fa-telegram"></i> telegram</a>
+              </div>
+            </div>
+              <div class="news-item">
+               <img src="https://picsum.photos/id/238/300/200" alt="Новость 2">
+               <h3> <a href="https://novy.tv/ru/g-space/news/2021/05/27/v-kiyevi-vidkrilas-vistavka-ukrayinskogo-suchasnogo-mistetstva-vidkrita-mozhlivist/#:~:text=180%20%D0%BF%D1%80%D0%BE%D0%B8%D0%B7%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B9%2050%20%D0%BC%D0%B0%D1%81%D1%82%D0%B5%D1%80%D0%BE%D0%B2%20%D0%B6%D0%B8%D0%B2%D0%BE%D0%BF%D0%B8%D1%81%D0%B8,%D0%B4%D0%BE%2025%20%D0%B8%D1%8E%D0%BB%D1%8F%202021%20%D0%B3%D0%BE%D0%B4%D0%B0." target="_blank">В Киеве открылась новая выставка современного искусства</a></h3>
+               <p> <a href="https://new.pinchukartcentre.org/tpost/pbhgl7k9s1-pinchukartcentre-vozobnovlyaet-rabotu-i" target="_blank">Сегодня, 21 июля, в Киеве открылась выставка современного искусства "Абстракция и реальность". Выставка представляет работы украинских и зарубежных художников и продлится до конца августа.</a></p>
+               
+               <div class="social" data-url="<?php echo 'https://'.$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];?>" data-title="Стильные кнопки поделится в соц сетях без использования сторонних сервисов">		
+	
+                <a href="https://nl-nl.facebook.com/" class="push facebook" target="_blank" data-id="fb"><i class="fa fa-facebook"></i> Facebook</a>
+                <a href="https://vk.com/" class="push vkontakte" target="_blank" data-id="vk"><i class="fa fa-vk"></i> Вконтакте</a>    	
+                <a href="https://twitter.com/?lang=uk" class="push twitter" target="_blank" data-id="tw"><i class="fa fa-twitter"></i> Twitter</a>
+                <a href="https://cloud.google.com/" class="push google" target="_blank" data-id="gp"><i class="fa fa-google-plus"></i> Google+</a>
+                <a href="https://www.pinterest.com/#top" class="push pinterest" target="_blank" data-id="pin"><i class="fa fa-pinterest"></i> Pinterest </a>
+                <a href="https://www.viber.com/ru/" class="push viber" target="_blank" data-id="viber"><i class="fa fa-phone"></i> Viber </a>
+                <a href="https://t.me/agvento1" class="push telegram" target="_blank"  data-id="telegram" ><i class="fa fa-telegram"></i> telegram</a>
+              </div>
+            </div>
+              </div>
+              
+              <div class="news-item">
+               <img src="https://picsum.photos/id/239/300/200" alt="Новость 3">
+               <h3>Сборная Украины по футболу вышла в полуфинал Чемпионата Европы</h3>
+               <p>Вчера, 22 июля, сборная Украины по футболу победила команду Италии со счетом 2:1 и вышла в полуфинал Чемпионата Европы. Следующий матч состоится 28 июля.</p>
+
+               <div class="social" data-url="<?php echo 'https://'.$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];?>" data-title="Стильные кнопки поделится в соц сетях без использования сторонних сервисов">		
+	
+                <a href="https://nl-nl.facebook.com/" class="push facebook" target="_blank" data-id="fb"><i class="fa fa-facebook"></i> Facebook</a>
+                <a href="https://vk.com/" class="push vkontakte" target="_blank" data-id="vk"><i class="fa fa-vk"></i> Вконтакте</a>    	
+                <a href="https://twitter.com/?lang=uk" class="push twitter" target="_blank" data-id="tw"><i class="fa fa-twitter"></i> Twitter</a>
+                <a href="https://cloud.google.com/" class="push google" target="_blank" data-id="gp"><i class="fa fa-google-plus"></i> Google+</a>
+                <a href="https://www.pinterest.com/#top" class="push pinterest" target="_blank" data-id="pin"><i class="fa fa-pinterest"></i> Pinterest </a>
+                <a href="https://www.viber.com/ru/" class="push viber" target="_blank" data-id="viber"><i class="fa fa-phone"></i> Viber </a>
+                <a href="https://t.me/agvento1" class="push telegram" target="_blank"  data-id="telegram" ><i class="fa fa-telegram"></i> telegram</a>
+              </div>
+            </div>
+              </div>
+             </div>
+            </section>
+          
+            <section class="latest-news">
+             <h2>Последние новости</h2>
+             <div class="news-container">
+              <div class="news-item">
+               <img src="https://picsum.photos/id/240/200/150" alt="Новость 4">
+               <h3> <a href="https://nashkiev.ua/news/v-kieve-proshel-10-festival-oulichnoy-edy-foto" target="_blank">В Киеве прошел фестиваль уличной еды</a></h3>
+               <p>В выходные, 24-25 июля, в Киеве прошел фестиваль уличной еды "Урбан Фуд Фест". На фестивале представлены блюда разных кухонь мира от лучших киевских шеф-поваров.</p>
+
+               <div class="social" data-url="<?php echo 'https://'.$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];?>" data-title="Стильные кнопки поделится в соц сетях без использования сторонних сервисов">		
+	
+                <a href="https://nl-nl.facebook.com/" class="push facebook" target="_blank" data-id="fb"><i class="fa fa-facebook"></i> Facebook</a>
+                <a href="https://vk.com/" class="push vkontakte" target="_blank" data-id="vk"><i class="fa fa-vk"></i> Вконтакте</a>    	
+                <a href="https://twitter.com/?lang=uk" class="push twitter" target="_blank" data-id="tw"><i class="fa fa-twitter"></i> Twitter</a>
+                <a href="https://cloud.google.com/" class="push google" target="_blank" data-id="gp"><i class="fa fa-google-plus"></i> Google+</a>
+                <a href="https://www.pinterest.com/#top" class="push pinterest" target="_blank" data-id="pin"><i class="fa fa-pinterest"></i> Pinterest </a>
+                <a href="https://www.viber.com/ru/" class="push viber" target="_blank" data-id="viber"><i class="fa fa-phone"></i> Viber </a>
+                <a href="https://t.me/agvento1" class="push telegram" target="_blank"  data-id="telegram" ><i class="fa fa-telegram"></i> telegram</a>
+              </div>
+            </div>
+              </div>
+              <div class="news-item">
+               <img src="https://picsum.photos/id/241/200/150" alt="Новость 5">
+               <h3>В Харькове открыли новый парк аттракционов</h3>
+               <p>Сегодня, 26 июля, в Харькове открылся новый парк аттракционов "Адреналин". Парк предлагает различные аттракционы для детей и взрослых.</p>
+
+               <div class="social" data-url="<?php echo 'https://'.$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];?>" data-title="Стильные кнопки поделится в соц сетях без использования сторонних сервисов">		
+	
+                <a href="https://nl-nl.facebook.com/" class="push facebook" target="_blank" data-id="fb"><i class="fa fa-facebook"></i> Facebook</a>
+                <a href="https://vk.com/" class="push vkontakte" target="_blank" data-id="vk"><i class="fa fa-vk"></i> Вконтакте</a>    	
+                <a href="https://twitter.com/?lang=uk" class="push twitter" target="_blank" data-id="tw"><i class="fa fa-twitter"></i> Twitter</a>
+                <a href="https://cloud.google.com/" class="push google" target="_blank" data-id="gp"><i class="fa fa-google-plus"></i> Google+</a>
+                <a href="https://www.pinterest.com/#top" class="push pinterest" target="_blank" data-id="pin"><i class="fa fa-pinterest"></i> Pinterest </a>
+                <a href="https://www.viber.com/ru/" class="push viber" target="_blank" data-id="viber"><i class="fa fa-phone"></i> Viber </a>
+                <a href="https://t.me/agvento1" class="push telegram" target="_blank"  data-id="telegram" ><i class="fa fa-telegram"></i> telegram</a>
+              </div>
+            </div>
+              </div>
+              <div class="news-item">
+               <img src="https://picsum.photos/id/242/200/150" alt="Новость 6">
+               <h3>В Донецкой области произошло землетрясение магнитудой 4,5</h3>
+               <p>Вчера, 27 июля, в Донецкой области произошло землетрясение магнитудой 4,5. По предварительным данным, жертв и разрушений нет.</p>
+
+               <div class="social" data-url="<?php echo 'https://'.$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];?>" data-title="Стильные кнопки поделится в соц сетях без использования сторонних сервисов">		
+	
+                <a href="https://nl-nl.facebook.com/" class="push facebook" target="_blank" data-id="fb"><i class="fa fa-facebook"></i> Facebook</a>
+                <a href="https://vk.com/" class="push vkontakte" target="_blank" data-id="vk"><i class="fa fa-vk"></i> Вконтакте</a>    	
+                <a href="https://twitter.com/?lang=uk" class="push twitter" target="_blank" data-id="tw"><i class="fa fa-twitter"></i> Twitter</a>
+                <a href="https://cloud.google.com/" class="push google" target="_blank" data-id="gp"><i class="fa fa-google-plus"></i> Google+</a>
+                <a href="https://www.pinterest.com/#top" class="push pinterest" target="_blank" data-id="pin"><i class="fa fa-pinterest"></i> Pinterest </a>
+                <a href="https://www.viber.com/ru/" class="push viber" target="_blank" data-id="viber"><i class="fa fa-phone"></i> Viber </a>
+                <a href="https://t.me/agvento1" class="push telegram" target="_blank"  data-id="telegram" ><i class="fa fa-telegram"></i> telegram</a>
+              </div>
+            </div>
+              </div>
+             </div>
+             <div class="news-item">
+                <img src="data:image/jpeg;base64,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" alt="Новость 1">
+                <h3> <a href="https://www.rbc.ua/ukr/news/ukrayini-dozvolili-viyizd-shche-odniy-kategoriyi-1691776443.html" target="_blank">В Украине разрешили выезд за границу еще одной категории граждан</a></h3>
+                <p><a href="https://www.epravda.com.ua/rus/news/2023/07/3/701848/" target="_blank">В среду, 20 июля, Украина получила кредит от Международного валютного фонда на сумму $5 млрд. Кредит предоставляется на условиях программы расширенного финансового мониторинга.</a></p>
+
+                <div class="social" data-url="<?php echo 'https://'.$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];?>" data-title="Стильные кнопки поделится в соц сетях без использования сторонних сервисов">		
+	
+                  <a href="https://nl-nl.facebook.com/" class="push facebook" target="_blank" data-id="fb"><i class="fa fa-facebook"></i> Facebook</a>
+                  <a href="https://vk.com/" class="push vkontakte" target="_blank" data-id="vk"><i class="fa fa-vk"></i> Вконтакте</a>    	
+                  <a href="https://twitter.com/?lang=uk" class="push twitter" target="_blank" data-id="tw"><i class="fa fa-twitter"></i> Twitter</a>
+                  <a href="https://cloud.google.com/" class="push google" target="_blank" data-id="gp"><i class="fa fa-google-plus"></i> Google+</a>
+                  <a href="https://www.pinterest.com/#top" class="push pinterest" target="_blank" data-id="pin"><i class="fa fa-pinterest"></i> Pinterest </a>
+                  <a href="https://www.viber.com/ru/" class="push viber" target="_blank" data-id="viber"><i class="fa fa-phone"></i> Viber </a>
+                  <a href="https://t.me/agvento1" class="push telegram" target="_blank"  data-id="telegram" ><i class="fa fa-telegram"></i> telegram</a>
+                </div>
+              </div>
+               </div>
+               <div class="news-item">
+                <img src="https://www.rbc.ua/static/img/f/_/f_16_nimechchina_gettyimages_1281829523_6_260x164.jpg" alt="Новость1">
+                <h3> <a href="https://www.rbc.ua/ukr/news/pidtrimka-povitrya-golovne-f-16-ta-hto-mozhe-1691762523.html" target="_blank">Поддержка с воздуха. Главное об F-16 и кто может передать их Украин</a>е</h3>
+
+                <div class="social" data-url="<?php echo 'https://'.$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];?>" data-title="Стильные кнопки поделится в соц сетях без использования сторонних сервисов">		
+	
+                  <a href="https://nl-nl.facebook.com/"class="push facebook" target="_blank" data-id="fb"><i class="fa fa-facebook"></i> Facebook</a>
+                  <a href="https://vk.com/" class="push vkontakte" target="_blank" data-id="vk"><i class="fa fa-vk"></i> Вконтакте</a>    	
+                  <a href="https://twitter.com/?lang=uk" class="push twitter" target="_blank" data-id="tw"><i class="fa fa-twitter"></i> Twitter</a>
+                  <a href="https://cloud.google.com/" class="push google" target="_blank" data-id="gp"><i class="fa fa-google-plus"></i> Google+</a>
+                  <a href="https://www.pinterest.com/#top" class="push pinterest" target="_blank" data-id="pin"><i class="fa fa-pinterest"></i> Pinterest </a>
+                  <a href="https://www.viber.com/ru/" class="push viber" target="_blank" data-id="viber"><i class="fa fa-phone"></i> Viber </a>
+                  <a href="https://t.me/agvento1" class="push telegram" target="_blank"  data-id="telegram" ><i class="fa fa-telegram"></i> telegram</a>
+                </div>
+              </div>
+
+               </div>
+               <div class="news-item">
+                <img src="data:image/jpeg;base64,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" alt="News1">
+                <h3> <a href="https://24tv.ua/ru/ataka-odessy-14-avgusta-2023-vygljadit-sgorevshij-gipermarket_n2371667" target="_blank">Что осталось от гипермаркета Fozzy в Одессе после ночного удара: жуткие кадры
+                    https://24tv.ua/ru/ataka-odessy-14-avgusta-2023-vygljadit-sgorevshij-gipermarket_n2371667</a></h3>
+
+                    <div class="social" data-url="<?php echo 'https://'.$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];?>" data-title="Стильные кнопки поделится в соц сетях без использования сторонних сервисов">		
+	
+                      <a href="https://nl-nl.facebook.com/" class="push facebook" target="_blank" data-id="fb"><i class="fa fa-facebook"></i> Facebook</a>
+                      <a href="https://vk.com/" class="push vkontakte" target="_blank" data-id="vk"><i class="fa fa-vk"></i> Вконтакте</a>    	
+                      <a href="https://twitter.com/?lang=uk" class="push twitter" target="_blank" data-id="tw"><i class="fa fa-twitter"></i> Twitter</a>
+                      <a href="https://cloud.google.com/" class="push google" target="_blank" data-id="gp"><i class="fa fa-google-plus"></i> Google+</a>
+                      <a href="https://www.pinterest.com/#top" class="push pinterest" target="_blank" data-id="pin"><i class="fa fa-pinterest"></i> Pinterest </a>
+                      <a href="https://www.viber.com/ru/" class="push viber" target="_blank" data-id="viber"><i class="fa fa-phone"></i> Viber </a>
+                      <a href="https://t.me/agvento1" class="push telegram" target="_blank"  data-id="telegram"><i class="fa fa-telegram"></i> telegram</a> 
+                      
+                    </div>
+                  </div>
+                
+
+
+               </div>
+            </section>
+           </main>
+          
+     <footer>
+        <div class="button"><a href="https://war.ukraine.ua/ru/podderzhyte-ukraynu/" class="support-unian" target="_blank"> 
+            Support US
+            <img  src="./img/ukraine-ukraine-sticker.gif "  alt="Support of Ukraine">
+            </a></div>
+
+
+
+
+
+            
+            
+        
+           
+
+            
+ <div class="contacts">
+                
+              <a href="https://www.instagram.com/zhannadark66/" target="_blank">contacts</a> <img src="https://img.icons8.com/?size=16&id=shZNtQPsMJ6i&format=png" alt="">
+              <a href="mailto:bogenkilo@gmail.com" target="_blank">gmail</a> <img src="https://img.icons8.com/?size=16&id=50853&format=png" alt="">
+              <a href="tel:+380508475243">Callme</a> <img src="https://img.icons8.com/?size=24&id=OWFxf1qAiOCG&format=png" alt="">
+            </div>              
+</footer>
+
+
+
+        
+
+<div><a href="#" class="to-top"><i class="fa-solid fa-angle-up fa-beat"></i></a></div>
+
+
+  
+
+
+  <script src="./index.js"></script>
+
+  
+  
+  
+  
+  
+  
+  
+ 
+</body>
+
+
+</html>
+
+    
+
